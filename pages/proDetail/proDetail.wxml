@@ -1,0 +1,59 @@
+<cyx-header ></cyx-header>
+
+<view style="padding: 80rpx 30rpx;" wx:if="{{!detail}}">
+  <van-skeleton title row="6" />
+</view>
+<view class="detail" wx:else>
+  <view class="banner">
+    <image src="{{detail.picpath}}"></image>
+  </view>
+
+  <view class="textMain">
+
+  <view class="box">
+    <view class="title">
+      {{detail.title}}
+    </view>
+    <view class="right">
+      <van-icon name="share-o" size="18" />
+      <text>分享</text>
+      <button open-type="share" class="share" size="mini">
+      享
+      </button>
+    </view>
+  </view>
+
+
+    <view class="text">
+    
+        <view class="row">
+          <view class="left"><text space="emsp">货 号：</text></view>
+          <view class="right">{{detail.pronum}}</view>
+        </view>
+
+        <view class="row">
+          <view class="left"><text space="emsp">等 级：</text></view>
+          <view class="right">{{detail.grade}}</view>
+        </view>
+
+        <view class="row">
+          <view class="left"><text space="emsp">年 份：</text></view>
+          <view class="right">{{detail.year}}</view>
+        </view>
+
+        <view class="row">
+          <view class="left"><text space="emsp">净含量：</text></view>
+          <view class="right">{{detail.weight}}</view>
+        </view>
+
+        <view class="row">
+          <view class="left"><text space="emsp">零售价：</text></view>
+          <view class="right">3000/饼</view>
+        </view>    
+    </view>
+  </view>
+</view>
+
+
+<cyx-footer></cyx-footer>
+

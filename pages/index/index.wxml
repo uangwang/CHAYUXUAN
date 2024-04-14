@@ -1,0 +1,72 @@
+<cyx-header></cyx-header>
+
+<view class="banner">
+  <swiper
+  previous-margin="30rpx"
+  circular="true"
+  autoplay
+  interval="3000"
+  indicator-dots="true"
+  indicator-color="rgba(255,255,255,0.3)"
+  indicator-active-color="#BDA066"
+  >
+    <swiper-item>
+      <image src="https://mp-51fd69d6-6662-4a03-a283-447aae0de757.cdn.bspapp.com/static/images/banner0.png" mode=""/>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://mp-51fd69d6-6662-4a03-a283-447aae0de757.cdn.bspapp.com/static/images/banner1.jpg" mode=""/>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://mp-51fd69d6-6662-4a03-a283-447aae0de757.cdn.bspapp.com/static/images/banner2.jpg" mode=""/>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://mp-51fd69d6-6662-4a03-a283-447aae0de757.cdn.bspapp.com/static/images/banner3.jpg" mode=""/>
+    </swiper-item>
+  </swiper>
+</view>
+
+<view class="scrollNav">
+  <scroll-view scroll-x>
+    <navigator open-type="reLaunch" 
+    url="/pages/classify/classify?idx={{index}}" 
+    class="item" wx:for="{{navArr}}" wx:key="_id">
+    <view class="pic">
+      <image src="{{item.icon}}" mode=""/>
+    </view>
+    <view class="text">{{item.classname}}</view>
+    </navigator>
+  </scroll-view>
+</view>
+
+<view class="about">
+  <view class="pubTitle">
+    <view class="en">introduce</view>
+    <view class="cn">茶语轩简介</view>
+    <view class="line"></view>
+  </view>
+
+  <view class="content">
+    <view class="row">茶语轩作为一家位于成都的茶馆，以其深厚的文化底蕴和独特的经营理念而闻名。它不仅是一个传统的茶馆，同时也是一个白茶文化的宣传者。在这里，你可以品味到正宗的中国白茶，感受到白茶文化的魅力。</view>
+    <view class="row">首先，茶语轩以其精选的中国白茶备受推崇。无论是来自大山深处的白毫银针，还是具有独特风味的白牡丹，茶语轩都致力于为顾客提供最优质的白茶。每一款白茶都经过精心挑选和独特的制作工艺，以确保其口感和香气能够最大程度地展现出来。无论你是茶叶爱好者还是对白茶文化感兴趣，茶语轩都能满足你的需求，让你在品味中国白茶的同时，也可以了解白茶的历史和制作工艺。</view>
+    <view class="row">其次，茶语轩注重传播白茶文化。在这里，顾客不仅可以品味美味的白茶，还可以参与到丰富多样的白茶文化活动中。茶语轩定期举办白茶品鉴会、白茶知识讲座等活动，让顾客有机会学习和了解白茶文化的方方面面。无论是品茶技巧还是白茶礼仪，茶语轩都将为你提供专业的指导和教学，让你深入体验白茶文化的魅力。</view>
+    <view class="row">最后，茶语轩的环境与氛围也是其吸引顾客的重要因素之一。茶语轩以古色古香的装修风格为基调，营造出宁静和谐的氛围。在这里，你可以远离城市的喧嚣，与亲朋好友一起享受白茶文化的熏陶，放松心情，舒缓压力。无论是与朋友闲谈，亦或是独自一人静静品茗，茶语轩都是你放松身心的理想之地。</view>
+    <view class="row">总之，茶语轩不仅是一个提供优质茶叶的茶馆，更是一个传播白茶文化的场所。它将中国的白茶文化与现代社会相结合，为顾客带来独特的白茶品味体验。如果你想在成都品味正宗的中国白茶，并且了解白茶文化的精髓，茶语轩绝对是你的不二选择。</view>
+  </view>
+</view>
+
+<view class="news">
+  <view class="pubTitle">
+    <view class="en">NEWS</view>
+    <view class="cn">新闻资讯</view>
+    <view class="line"></view>
+  </view>
+
+  <view class="content">
+    <view class="box" wx:for="{{newsArr}}" wx:key="_id">
+      <cyx-news-item item="{{item}}"></cyx-news-item>
+    </view>
+  </view>
+
+</view>
+
+<cyx-footer></cyx-footer>

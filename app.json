@@ -1,0 +1,57 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/classify/classify",
+        "pages/news/news",
+        "pages/newsDetail/newsDetail",
+        "pages/proDetail/proDetail",
+        "pages/user/user"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#282C34",
+        "navigationBarTitleText": "茶语轩",
+        "navigationBarTextStyle": "white"
+    },
+
+    "sitemapLocation": "sitemap.json",
+    "tabBar": {
+        "list": [{
+            "text": "首页",
+            "pagePath": "pages/index/index",
+            "iconPath": "images/icon/home.png",
+            "selectedIconPath": "images/icon/home-fill.png"
+        }, {
+            "text": "分类",
+            "pagePath": "pages/classify/classify",
+            "iconPath": "images/icon/classfiy.png",
+            "selectedIconPath": "images/icon/classfiy-fill.png"
+        }, {
+            "text": "资讯",
+            "pagePath": "pages/news/news",
+            "iconPath": "images/icon/news.png",
+            "selectedIconPath": "images/icon/news-fill.png"
+        }, {
+            "text": "我的",
+            "pagePath": "pages/user/user",
+            "iconPath": "images/icon/user.png",
+            "selectedIconPath": "images/icon/user-fill.png"
+        }],
+
+        "color": "#eab157",
+        "selectedColor": "#eeae4a"
+    },
+    "usingComponents": {
+        "cyx-header": "components/cyx-header/cyx-header",
+        "cyx-news-item": "components/cyx-news-item/cyx-news-item",
+        "cyx-footer": "components/cyx-footer/cyx-footer",
+        "cyx-product-item": "components/cyx-product-item/cyx-product-item",
+        "van-button": "@vant/weapp/button/index",
+        "van-icon": "@vant/weapp/icon/index",
+        "van-loading": "@vant/weapp/loading/index",
+        "van-tab": "@vant/weapp/tab/index",
+        "van-tabs": "@vant/weapp/tabs/index",
+        "van-skeleton": "@vant/weapp/skeleton/index"
+
+
+    }
+}

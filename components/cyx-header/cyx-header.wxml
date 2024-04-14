@@ -1,0 +1,11 @@
+<view class="header">
+  <navigator url="/pages/index/index" class="logo">
+    <image src="https://mp-51fd69d6-6662-4a03-a283-447aae0de757.cdn.bspapp.com/static/images/茶语轩.png" mode="heightFix" class="pic"/>
+  </navigator>
+
+  <view class="search">
+    <van-icon name="phone-o" size="55rpx" class="vanicon" bindtap="clickPhone"/>
+    <van-icon name="search" size="55rpx"   />
+  
+  </view>
+</view>

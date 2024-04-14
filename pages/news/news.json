@@ -1,0 +1,7 @@
+{
+    "usingComponents": {},
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#BDA066",
+    "navigationBarTitleText": "资讯"
+
+}

@@ -1,0 +1,22 @@
+<navigator url="/pages/newsDetail/newsDetail?id={{item._id}}" class="nsitem">
+  <view class="pic">
+    <image class="img" src="{{item.picurl}}" mode="aspectFill" />
+  </view>
+  <view class="text">
+    <view class="title">{{item.title}}</view>
+    <view class="info">
+      <view class="block">
+        <van-icon class="vanicon" name="clock-o"  size="16"/>
+        <text>{{item.publish_date}}</text>
+      </view>
+      <view class="block">
+        <van-icon class="vanicon" name="browsing-history-o" size="16"/>
+        <text>{{item.view_count}}</text>
+      </view>
+      <view class="block">
+        <van-icon class="vanicon" name="user-o" size="16"/>
+        <text>{{item.author}}</text>
+      </view>
+    </view>
+  </view>
+</navigator>

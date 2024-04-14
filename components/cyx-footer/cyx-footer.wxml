@@ -1,0 +1,12 @@
+<view class="footer">
+  <view class="row">Copyright © {{year}} cdutksw</view> 
+  <view class="row">解释权归瞌睡王所有</view>
+  <view class="row">成都理工大学银杏2-624</view>
+</view>
+
+<!-- 客服 -->
+<view class="kefu">
+<button class="btn" open-type="contact">1</button>
+<image src="/images/icon/女客服.png" mode="aspectFill" class="pic"/>
+<view class="line"></view>
+</view>
